@@ -32,7 +32,7 @@ A solução foi implementada utilizando serviços gerenciados da AWS, permitindo
 A solução foi desenvolvida utilizando uma arquitetura **Serverless** e **Event-Driven**, permitindo o processamento de pedidos por diferentes canais de entrada e garantindo escalabilidade, desacoplamento entre serviços e tratamento de falhas.
 
 ```markdown
-![Arquitetura Completa](architecture/arquitetura-completa.jpg)
+![Arquitetura Completa](images/arquitetura-completa.jpg)
 ```
 
 ---
