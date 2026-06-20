@@ -32,7 +32,7 @@ A solução foi implementada utilizando serviços gerenciados da AWS, permitindo
 A solução foi desenvolvida utilizando uma arquitetura **Serverless** e **Event-Driven**, permitindo o processamento de pedidos por diferentes canais de entrada e garantindo escalabilidade, desacoplamento entre serviços e tratamento de falhas.
 
 ```markdown
-![Arquitetura Completa](architecture/arquitetura-completa.png)
+![Arquitetura Completa](architecture/arquitetura-completa.jpg)
 ```
 
 ---
@@ -91,7 +91,7 @@ A solução foi desenvolvida utilizando uma arquitetura **Serverless** e **Event
 Envio de um pedido através da API REST e resposta retornada pela aplicação.
 
 ```markdown
-![Teste API](images/01-api-test.png)
+![Teste API](images/01-api-test.jpg)
 ```
 
 ---
@@ -101,7 +101,7 @@ Envio de um pedido através da API REST e resposta retornada pela aplicação.
 Bucket contendo arquivos JSON enviados para processamento.
 
 ```markdown
-![S3 Upload](images/02-s3-upload.png)
+![S3 Upload](images/02-s3-upload.jpg)
 ```
 
 ---
@@ -111,7 +111,7 @@ Bucket contendo arquivos JSON enviados para processamento.
 Registro dos arquivos processados e seus respectivos status.
 
 ```markdown
-![DynamoDB Histórico](images/03-dynamodb-historico.png)
+![DynamoDB Histórico](images/03-dynamodb-historico.jpg)
 ```
 
 ---
@@ -121,7 +121,7 @@ Registro dos arquivos processados e seus respectivos status.
 Notificação automática de erro durante a validação de arquivos.
 
 ```markdown
-![SNS](images/04-sns.png)
+![SNS](images/04-sns.jpg)
 ```
 
 ---
@@ -131,7 +131,7 @@ Notificação automática de erro durante a validação de arquivos.
 Regra responsável pelo roteamento dos eventos de pedidos.
 
 ```markdown
-![EventBridge](images/05-eventbridge-rule.png)
+![EventBridge](images/05-eventbridge-rule.jpg)
 ```
 
 ---
@@ -147,7 +147,7 @@ Exemplos de status:
 * CANCELADO
 
 ```markdown
-![DynamoDB Pedidos](images/06-dynamodb-pedidos.png)
+![DynamoDB Pedidos](images/06-dynamodb-pedidos.jpg)
 ```
 
 ---
@@ -157,7 +157,7 @@ Exemplos de status:
 Mensagens que não puderam ser processadas com sucesso são encaminhadas para a DLQ para análise posterior.
 
 ```markdown
-![DLQ](images/07-dlq.png)
+![DLQ](images/07-dlq.jpg)
 ```
 
 ---
@@ -167,7 +167,7 @@ Mensagens que não puderam ser processadas com sucesso são encaminhadas para a 
 Monitoramento das execuções das funções Lambda e rastreamento do fluxo de processamento.
 
 ```markdown
-![CloudWatch](images/08-cloudwatch.png)
+![CloudWatch](images/08-cloudwatch.jpg)
 ```
 
 ---
